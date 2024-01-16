@@ -8,10 +8,12 @@ env:
   B: 6
 
 jobs:
-  job_conditionnel:
+  job1:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - name: Vérifier la condition
-      if: ${{env.A >= 0 && env.B >= 0}}
-        run: echo "les valeurs a et b sont strictement positives"
+        if: ${{env.A >= 0 && env.B >= 0}}
+        run: |
+          echo "les valeurs a et b sont strictement positives"
