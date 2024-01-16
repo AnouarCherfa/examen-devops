@@ -1,6 +1,7 @@
 name: exercice 2
 
-on: push
+on:
+  workflow_dispatch:
 
 env:
   a: 5
