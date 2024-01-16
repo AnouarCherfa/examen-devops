@@ -3,11 +3,14 @@ name: exercice 2
 on:
   workflow_dispatch:
 
-env:
+jobs:
+  strategy:
+    matrix:
+      python-version: [3.6, 3.7, 3.8, 3.9]
+  env:
   A: 5
   B: -2
 
-jobs:
   job_conditionnel:
     runs-on: ubuntu-latest
     if: (env.A >= 0) && (env.B >= 0)
