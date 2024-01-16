@@ -17,3 +17,17 @@ jobs:
         if: ${{env.A >= 0 && env.B >= 0}}
         run: |
           echo "les valeurs a et b sont strictement positives"
+
+  job2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Execute empty.py
+      run: python empty.py

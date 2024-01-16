@@ -5,9 +5,6 @@ on:
     tags:
       - "release8*"
 
-env:
-  VAR1: hello
-
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -15,7 +12,7 @@ jobs:
     steps:
       - name: Afficher la variable
         run: |
-          echo "La valeur de la variable est : env.VAR1"
+          echo "La valeur de la variable est : ${{ vars.VAR1 }}"
 
   job2:
     runs-on: ubuntu-latest
