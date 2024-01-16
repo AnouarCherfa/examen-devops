@@ -10,7 +10,7 @@ env:
 jobs:
   job_conditionnel:
     runs-on: ubuntu-latest
-    if: (env.a >= 0) && (env.b >= 0)
+    if: (env.A >= 0) && (env.B >= 0)
     steps:
       - uses: actions/checkout@v2
       - name: Vérifier la condition
