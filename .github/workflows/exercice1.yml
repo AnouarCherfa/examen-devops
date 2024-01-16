@@ -21,4 +21,4 @@ jobs:
     steps:
       - name: Afficher le message d'erreur
         run: |
-          echo "Le job précédent a malheureusement échoué, vous pouvez retenter votre chance la prochaine fois inchallah"
+          echo "Le job précédent a malheureusement échoué"
