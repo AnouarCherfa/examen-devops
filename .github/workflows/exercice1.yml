@@ -3,7 +3,7 @@ name: exercice 1
 on:
   push:
     tags:
-      - "release4*"
+      - "release5*"
 
 env:
   VAR1: hello
