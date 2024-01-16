@@ -1,0 +1,16 @@
+name: exercice 2
+
+on: push
+
+env:
+  a: 5
+  b: -2
+
+jobs:
+  job_conditionnel:
+    runs-on: ubuntu-latest
+    if: (vars.a >= 0) && (vars.a >= 0)
+    steps:
+      - uses: actions/checkout@v2
+      - name: Vérifier la condition
+        run: echo "les valeurs a et b sont strictement positives"
