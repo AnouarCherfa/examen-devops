@@ -3,28 +3,24 @@ name: exercice 1
 on:
   push:
     tags:
-      - release1*
+      - "release1*"
 
 env:
-  VAR1: hello 
-  
+  VAR1: hello
+
 jobs:
   job1:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-  - name: Afficher la variable
-  run: |
-        echo "La valeur de la variable est : ${{ vars.VAR1 }}"
+    steps:
+      - name: Afficher la variable
+        run: |
+          echo "La valeur de la variable est : $VAR1"
 
   job2:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-  - name: Afficher le message d'erreure  
-  run: |
-        echo "Le job précedent a malheureusement échoué, vous pouvez retenter votre chance la prochaine fois inchallah"
-
-
-
-
+    steps:
+      - name: Afficher le message d'erreur
+        run: |
+          echo "Le job précédent a malheureusement échoué, vous pouvez retenter votre chance la prochaine fois inchallah"
