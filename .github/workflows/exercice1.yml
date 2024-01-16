@@ -19,6 +19,7 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
+    if: faillure()
 
     steps:
       - name: Afficher le message d'erreur
