@@ -5,7 +5,7 @@ on:
 
 env:
   A: 5
-  B: 6
+  B: 2
 
 jobs:
   job1:

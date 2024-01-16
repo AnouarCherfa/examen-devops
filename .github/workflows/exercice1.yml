@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Afficher la variable
         run: |
-          echo "La valeur de la variable est : $VAR1"
+          echo "La valeur de la variable est : env.VAR1"
 
   job2:
     runs-on: ubuntu-latest
