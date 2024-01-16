@@ -3,7 +3,7 @@ name: exercice 1
 on:
   push:
     tags:
-      - "release8*"
+      - "release11*"
 
 jobs:
   job1:
